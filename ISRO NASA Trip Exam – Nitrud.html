@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ISRO NASA Trip Exam – Nitrud</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef4ff;--card:#fff;--line:#dce6f7;--text:#1f2937;--muted:#64748b;--h2:#5b3fb5;--btn1:#1976d2;--btn2:#8b5cf6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--card:#151f33;--line:#27364f;--text:#e6edf8;--muted:#94a3b8;--h2:#b3a2fb}}
+:root[data-theme="dark"]{--bg:#0b1220;--card:#151f33;--line:#27364f;--text:#e6edf8;--muted:#94a3b8;--h2:#b3a2fb}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Poppins",system-ui,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:16px 14px 40px}
+.hero{position:relative;overflow:hidden;border-radius:30px;padding:34px 28px 30px;color:#fff;background:radial-gradient(circle at 85% 20%,#7c3aed 0,transparent 45%),linear-gradient(135deg,#0b1d4d,#1d4ed8 60%,#0ea5e9);box-shadow:0 14px 34px rgba(29,78,216,.35)}
+.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(#fff 1px,transparent 1.5px),radial-gradient(#fff 1px,transparent 1.5px);background-size:70px 70px,110px 110px;background-position:0 0,35px 50px;opacity:.35}
+.hero>*{position:relative}
+.rocket{position:absolute!important;right:24px;top:14px;font-size:76px;animation:fly 3.2s ease-in-out infinite}
+@keyframes fly{50%{transform:translate(8px,-14px) rotate(6deg)}}
+.badge{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);padding:5px 16px;border-radius:999px;font-weight:700;font-size:15px}
+h1{margin:14px 0 6px;font-size:clamp(26px,5vw,46px);font-weight:800;line-height:1.25;max-width:80%}
+.sub{font-size:clamp(20px,3.4vw,30px);font-weight:700;color:#fde68a;margin:0}
+.tag{display:inline-block;margin-top:12px;background:linear-gradient(90deg,#f59e0b,#f97316);padding:6px 18px;border-radius:12px;font-weight:800;font-size:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
+.info{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px 16px;box-shadow:0 4px 14px rgba(0,0,0,.05)}
+.ico{flex:none;width:50px;height:50px;border-radius:15px;display:grid;place-items:center;font-size:26px}
+.info b{display:block;font-size:13px;color:var(--muted);font-weight:700}
+.info span{font-size:17px;font-weight:600}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:22px;margin-bottom:18px;box-shadow:0 4px 14px rgba(0,0,0,.05)}
+.panel h3{margin:0 0 14px;font-size:24px;color:var(--h2);font-weight:800}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{padding:7px 15px;border-radius:999px;font-size:15px;font-weight:600;border:1px solid transparent;transition:transform .15s}
+.chip:hover{transform:translateY(-3px) scale(1.05)}
+.c0{background:#dbeafe;color:#1e40af}.c1{background:#dcfce7;color:#166534}.c2{background:#fef3c7;color:#92400e}.c3{background:#fce7f3;color:#9d174d}.c4{background:#ede9fe;color:#5b21b6}
+label{display:block;font-weight:700;font-size:18px;margin:16px 0 8px}
+input,select{width:100%;padding:15px 16px;font:inherit;font-size:18px;color:var(--text);background:var(--bg);border:2px solid var(--line);border-radius:16px;transition:.2s}
+input:focus,select:focus{outline:none;border-color:var(--btn2);box-shadow:0 0 0 4px rgba(139,92,246,.2)}
+button{width:100%;margin-top:26px;padding:18px;font:inherit;font-weight:800;font-size:22px;color:#fff;border:0;border-radius:20px;cursor:pointer;background:linear-gradient(90deg,var(--btn1),var(--btn2));box-shadow:0 10px 24px rgba(99,102,241,.4);transition:.2s}
+button:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(99,102,241,.5)}
+.msg{margin-top:16px;padding:14px 16px;border-radius:14px;font-weight:600;display:none}
+.msg.err{display:block;background:#fee2e2;color:#991b1b}
+.msg.ok{display:block;background:#dcfce7;color:#166534}
+.foot{text-align:center;color:var(--muted);font-size:14px;margin-top:8px}
+@media(max-width:640px){.grid{grid-template-columns:1fr}.rocket{font-size:48px;right:14px}h1{max-width:72%}.hero{padding:26px 18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="rocket">🚀</div>
+    <span class="badge">🏫 Education Department</span>
+    <h1>Panchayat Samiti Education Department, Nitrud</h1>
+    <p class="sub">ISRO NASA Trip Exam</p>
+    <span class="tag">✨ Practice Test</span>
+  </div>
+
+  <div class="grid">
+    <div class="info"><div class="ico" style="background:#dbeafe">📅</div><div><b>Date</b><span id="date"></span></div></div>
+    <div class="info"><div class="ico" style="background:#dcfce7">📝</div><div><b>Total Questions</b><span>50 • Total Marks 50</span></div></div>
+    <div class="info"><div class="ico" style="background:#fef3c7">🧬</div><div><b>Unit</b><span>Living World &amp; Biology</span></div></div>
+    <div class="info"><div class="ico" style="background:#fce7f3">🏆</div><div><b>Level</b><span>Medium to Hard • Competitive Exam Pattern</span></div></div>
+  </div>
+
+  <div class="panel">
+    <h3>📚 Topics Covered</h3>
+    <div class="chips" id="chips"></div>
+  </div>
+
+  <div class="panel">
+    <h3>🧑‍🎓 Student Information</h3>
+    <label for="name">Student&#39;s Full Name</label>
+    <input id="name" type="text" autocomplete="off" placeholder="Enter your name">
+    <label for="cls">Class</label>
+    <select id="cls">
+      <option value="">Select class</option>
+      <option>Class 5</option><option>Class 6</option><option>Class 7</option><option>Class 8</option>
+    </select>
+    <button id="start">🚀 Start Test</button>
+    <div id="msg" class="msg"></div>
+  </div>
+  <div class="foot">Nitrud • Best of luck! 🌟</div>
+</div>
+<script>
+var topics=["Living &amp; Non-living", "Plant Structure", "Plant Life Processes", "Photosynthesis", "Plant Reproduction", "Animals &amp; Classification", "Human Body", "Digestive System", "Respiratory System", "Blood Circulation", "Excretion", "Bones &amp; Muscles", "Sense Organs", "Microorganisms", "Diseases &amp; Prevention", "Food Chain", "Ecosystem", "Biodiversity", "Environmental Balance"];
+document.getElementById("chips").innerHTML=topics.map(function(t,i){return '<span class="chip c'+(i%5)+'">'+t+'</span>'}).join("");
+var d=new Date();
+document.getElementById("date").textContent=("0"+d.getDate()).slice(-2)+"/"+("0"+(d.getMonth()+1)).slice(-2)+"/"+d.getFullYear();
+document.getElementById("start").onclick=function(){
+  var n=document.getElementById("name").value.trim(),c=document.getElementById("cls").value,m=document.getElementById("msg");
+  if(!n||!c){m.className="msg err";m.textContent="Please enter the student's name and select a class.";return;}
+  m.className="msg ok";m.textContent="Best of luck, "+n+" ("+c+")! The test will begin shortly.";
+};
+</script>
+</body>
+</html>
